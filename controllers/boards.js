@@ -55,29 +55,11 @@ const updateBoard = async (req, res, next) => {
     }
 }
 
-// const getBoard = (req, res) => {
-//     try {
-//         const board = Boards.findOne({where: {id: req.params.id}})
-//         if(!board) 
-//             return res.status(400).json({
-//                 status: 'fail',
-//                 message: 'No board found'
-//             });
 
-//         res.status(200).json(board);
-
-//     }catch(error){
-//         res.status(400).json({
-//             status: 'fail',
-//             message: error
-//         });
-//     }
-// }
 
 
 module.exports = {
     createBoard,
-    updateBoard,
-    // getBoard
+    updateBoard
 }
 
